@@ -7,15 +7,15 @@ import { rhythm, scale } from "../utils/typography"
 
 class ArticleTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const article = this.props.data.markdownRemark
     const siteMeta = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} siteMeta={siteMeta}>
         <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          title={article.frontmatter.title}
+          description={article.frontmatter.description || article.excerpt}
         />
         <article>
           <header>
@@ -25,7 +25,7 @@ class ArticleTemplate extends React.Component {
                 marginBottom: 0,
               }}
             >
-              {post.frontmatter.title}
+              {article.frontmatter.title}
             </h1>
             <p
               style={{
@@ -34,10 +34,10 @@ class ArticleTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              {article.frontmatter.date}
             </p>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section dangerouslySetInnerHTML={{ __html: article.html }} />
           <hr
             style={{
               marginBottom: rhythm(1),
@@ -80,7 +80,7 @@ class ArticleTemplate extends React.Component {
 export default ArticleTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ArticleBySlug($slug: String!) {
     site {
       siteMetadata {
         title
