@@ -4,7 +4,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const articleTemplate = path.resolve(`./src/templates/article.js`)
   const result = await graphql(
     `
       {
@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: blogPost,
+      component: articleTemplate,
       context: {
         slug: post.node.fields.slug,
         previous,
@@ -54,7 +54,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    let value = createFilePath({ node, getNode })
+    switch (node.fields.sourceName) {
+      case "article":
+        value = "/info" + value
+        break
+    }
+
     createNodeField({
       name: `slug`,
       node,
