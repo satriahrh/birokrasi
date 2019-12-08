@@ -61,6 +61,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         break
     }
 
-    createNodeField({ name: `slug`, node, value })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
   }
 }
