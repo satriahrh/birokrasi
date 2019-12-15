@@ -25,7 +25,7 @@ const Item = props => {
   return (
     <Link to={article.fields.slug}>
       <article style={{
-        padding: `${rhythm(1/4)}`,
+        padding: `${rhythm(3/4)} 0`,
         borderBottom: '1px solid black',
         display: 'flex',
       }}>
@@ -52,7 +52,8 @@ const Item = props => {
           </h3>
           <p
             style={{
-              color: 'black'
+              color: 'black',
+              marginBottom: 0,
             }}
             dangerouslySetInnerHTML={{
               __html: article.frontmatter.description || article.excerpt,
