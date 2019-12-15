@@ -2,13 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Footer = props => {
-  let { isRoot } = props
-  let additionalStyle = {}
-  if (isRoot) {
-    additionalStyle = {
-      position: `absolute`,
-    }
-  }
   return (
     <footer
       style={{
@@ -17,7 +10,6 @@ const Footer = props => {
           bottom: 0,
           width: `100%`,
         },
-        ...additionalStyle,
       }}
     >
       <p

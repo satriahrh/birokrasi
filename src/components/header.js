@@ -9,9 +9,7 @@ const Casual = props => {
   return (
     <header
       style={{
-        margin: `0 auto`,
         padding: `0 ${rhythm(3 / 4)}`,
-        maxWidth: rhythm(24),
       }}
     >
       <Link
@@ -39,10 +37,8 @@ const Super = props => {
   return (
     <header
       style={{
-        margin: `0 auto`,
-        padding: `0 ${rhythm(3 / 4)}`,
-        maxWidth: rhythm(24),
-        paddingTop: `15vh`,
+        padding: `${rhythm(4)} ${rhythm(3 / 4)} ${rhythm(4)}`,
+        boxShadow: '0 2px 5px 0 #7e7e7e',
       }}
     >
       <Link
@@ -54,6 +50,7 @@ const Super = props => {
         <h1
           style={{
             marginBottom: 0,
+            marginTop: 0,
             ...scale(1.6),
           }}
         >

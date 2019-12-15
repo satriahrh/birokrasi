@@ -28,7 +28,7 @@ const Item = props => {
       <article
         style={{
           padding: `${rhythm(3 / 4)} 0`,
-          borderBottom: "1px solid black",
+          borderBottom: "1px solid #1e1e1e",
           display: "flex",
         }}
       >

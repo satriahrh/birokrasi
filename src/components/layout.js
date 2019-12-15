@@ -16,7 +16,7 @@ class Layout extends React.Component {
       >
         <Header isRoot={location.pathname === rootPath} siteMeta={siteMeta} />
         <Main isRoot={location.pathname === rootPath}>{children}</Main>
-        <Footer isRoot={location.pathname === rootPath} />
+        <Footer />
       </div>
     )
   }

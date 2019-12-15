@@ -19,14 +19,16 @@ const List = props => {
     articles = []
     let article = () => {
       return {
-        fields: {
-          slug: "something",
-        },
-        frontmatter: {
-          title: lorem.generateWords(8),
-          description: lorem.generateParagraphs(1),
-          type: "ktp",
-        },
+        node: {
+          fields: {
+            slug: "something",
+          },
+          frontmatter: {
+            title: lorem.generateWords(8),
+            description: lorem.generateParagraphs(1),
+            type: "ktp",
+          },
+        }
       }
     }
     articles.push(article())
@@ -35,7 +37,7 @@ const List = props => {
     articles.push(article())
     articles.push(article())
   }
-  return articles.map(item => <ItemArticle article={item} />)
+  return articles.map(item => <ItemArticle article={item.node} />)
 }
 
 export default List
