@@ -10,19 +10,6 @@ const icon = {
 
 const Item = props => {
   let { article } = props
-  if (!article) {
-    article = {
-      fields: {
-        slug: "something",
-      },
-      frontmatter: {
-        title: "Beginilah Caranya Mengurus KTP Tanpa Ribet",
-        description:
-          "Theres a difference between a variable being undeclared and being undefined.",
-        type: "ktp",
-      },
-    }
-  }
   return (
     <Link to={article.fields.slug}>
       <article
