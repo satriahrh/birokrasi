@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm } from '../../utils/typography'
-import {iconKtp, iconUnknown} from "../../icons"
+import { rhythm } from "../../utils/typography"
+import { iconKtp, iconUnknown } from "../../icons"
 
 const icon = {
   ktp: iconKtp,
@@ -17,27 +17,30 @@ const Item = props => {
       },
       frontmatter: {
         title: "Beginilah Caranya Mengurus KTP Tanpa Ribet",
-        description: "Theres a difference between a variable being undeclared and being undefined.",
+        description:
+          "Theres a difference between a variable being undeclared and being undefined.",
         type: "ktp",
       },
     }
   }
   return (
     <Link to={article.fields.slug}>
-      <article style={{
-        padding: `${rhythm(3/4)} 0`,
-        borderBottom: '1px solid black',
-        display: 'flex',
-      }}>
+      <article
+        style={{
+          padding: `${rhythm(3 / 4)} 0`,
+          borderBottom: "1px solid black",
+          display: "flex",
+        }}
+      >
         <div
           style={{
-            float: 'left',
+            float: "left",
           }}
         >
           <img
             style={{
-              maxWidth: '75px',
-              margin: `${rhythm(1/4)}`,
+              maxWidth: "75px",
+              margin: `${rhythm(1 / 4)}`,
             }}
             src={icon[article.frontmatter.type] || icon.unknown}
           />
@@ -45,14 +48,14 @@ const Item = props => {
         <div>
           <h3
             style={{
-              margin: 0
+              margin: 0,
             }}
           >
             {article.frontmatter.title}
           </h3>
           <p
             style={{
-              color: 'black',
+              color: "black",
               marginBottom: 0,
             }}
             dangerouslySetInnerHTML={{

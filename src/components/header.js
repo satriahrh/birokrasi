@@ -77,12 +77,11 @@ const Header = props => {
   let { isRoot, siteMeta } = props
   let header
   if (isRoot) {
-    header = <Super title={siteMeta.title} tagline={siteMeta.tagline}/>
+    header = <Super title={siteMeta.title} tagline={siteMeta.tagline} />
   } else {
-    header = <Casual title={siteMeta.title}/>
+    header = <Casual title={siteMeta.title} />
   }
   return header
 }
 
 export default Header
-
