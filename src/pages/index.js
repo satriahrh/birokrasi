@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {ListArticle} from "../components/article"
+import { ListArticle } from "../components/article"
 
 class BlogIndex extends React.Component {
   render() {

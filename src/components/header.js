@@ -38,7 +38,7 @@ const Super = props => {
     <header
       style={{
         padding: `${rhythm(4)} ${rhythm(3 / 4)} ${rhythm(4)}`,
-        boxShadow: '0 2px 5px 0 #7e7e7e',
+        boxShadow: "0 2px 5px 0 #7e7e7e",
       }}
     >
       <Link
