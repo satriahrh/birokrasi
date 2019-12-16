@@ -2,16 +2,18 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { ListArticle } from "../components/article"
 
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteMeta = data.site.siteMetadata
-    // const posts = data.allMarkdownRemark.edges
+    const articles = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} siteMeta={siteMeta}>
         <SEO title={siteMeta.homeTitle} description={siteMeta.description} />
+        <ListArticle articles={articles} />
       </Layout>
     )
   }
@@ -37,7 +39,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
             description
           }
