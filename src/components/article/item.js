@@ -29,6 +29,7 @@ const Item = props => {
               maxWidth: "75px",
               margin: `${rhythm(1 / 4)}`,
             }}
+            alt={article.frontmatter.type || "unknown"}
             src={icon[article.frontmatter.type] || icon.unknown}
           />
         </div>
@@ -42,7 +43,7 @@ const Item = props => {
           </h3>
           <p
             style={{
-              color: "black",
+              color: "hsla(0,0%,0%,0.73)",
               marginBottom: 0,
             }}
             dangerouslySetInnerHTML={{
