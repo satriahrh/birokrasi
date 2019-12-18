@@ -58,7 +58,7 @@ const Super = props => {
         </h1>
         <p
           style={{
-            color: "black",
+            color: "hsla(0,0%,0%,0.73)",
             margin: `0 auto`,
             ...scale(0.25),
           }}
