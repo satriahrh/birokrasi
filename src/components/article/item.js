@@ -29,7 +29,7 @@ const Item = props => {
               maxWidth: "75px",
               margin: `${rhythm(1 / 4)}`,
             }}
-            alt={article.frontmatter.type || 'unknown'}
+            alt={article.frontmatter.type || "unknown"}
             src={icon[article.frontmatter.type] || icon.unknown}
           />
         </div>
