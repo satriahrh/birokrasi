@@ -1,5 +1,9 @@
 # birokrasi
 
+## Contribute here
+
+Pick glo board -> https://app.gitkraken.com/glo/board/XiRiGBUCwgAQDzUi
+
 ## 🚀 Quick start
 
 1.  **Clone this repo.**
