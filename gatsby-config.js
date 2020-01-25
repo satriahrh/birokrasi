@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `birokrasi.id`,
-    homeTitle: `Portal Informasi Mengurus Segala Birokrasi`,
+    title: `caramengurus.com`,
+    homeTitle: `Cara Mengurus Ini Itu Tanpa Ribet`,
     tagline: `mengurus ini itu tanpa ribet`,
-    author: `Satria H R Harsono`,
-    description: `Portal utama informasi mengurus segala birokrasi di Indonesia.`,
-    siteUrl: `https://birokrasi.netlify.com/`,
+    description: `Portal utama informasi mengurus segala dokumen dan birokrasi di Indonesia.`,
+    siteUrl: `http://caramengurus.com/`,
   },
   plugins: [
     `gatsby-plugin-feed`,

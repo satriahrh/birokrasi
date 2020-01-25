@@ -19,7 +19,7 @@ const Footer = props => {
       >
         satriahrh © {new Date().getFullYear()} |{" "}
         <Link to={"/tentang-kami"}>tentang kami</Link> |{" "}
-        <Link to={"/layanan-di-birokrasi-id"}>layanan</Link> |{" "}
+        <Link to={"/layanan"}>layanan</Link> |{" "}
         <Link to={"/kontak"}>kontak</Link>
       </p>
     </footer>
