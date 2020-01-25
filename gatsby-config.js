@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `caramengurus.com`,
     homeTitle: `Cara Mengurus Ini Itu Tanpa Ribet`,
-    tagline: `mengurus ini itu tanpa ribet`,
+    tagline: `gampang mengurus ini itu tanpa ribet`,
     description: `Portal utama informasi mengurus segala dokumen dan birokrasi di Indonesia.`,
     siteUrl: `http://caramengurus.com/`,
   },
