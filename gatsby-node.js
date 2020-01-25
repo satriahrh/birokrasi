@@ -8,10 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               fields {
@@ -33,7 +30,6 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
-  // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
 
   posts.forEach((post, index) => {

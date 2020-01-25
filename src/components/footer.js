@@ -17,9 +17,9 @@ const Footer = props => {
           marginBottom: 0,
         }}
       >
-        satriahrh © {new Date().getFullYear()} |{" "}
+        <a href={"https://www.linkedin.com/in/hansa-mustada"}>hansamustada</a>, <a href={"https://www.linkedin.com/in/satriahrh"}>satriahrh</a> © {new Date().getFullYear()} |{" "}
         <Link to={"/tentang-kami"}>tentang kami</Link> |{" "}
-        <Link to={"/layanan-di-birokrasi-id"}>layanan</Link> |{" "}
+        <Link to={"/layanan"}>layanan</Link> |{" "}
         <Link to={"/kontak"}>kontak</Link>
       </p>
     </footer>
