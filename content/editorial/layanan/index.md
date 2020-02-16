@@ -1,8 +1,7 @@
 ---
 title: Layanan di caramengurus.com
 date: "2020-01-25"
-description: caramengurus.com adalah portal informasi cara mengurus segala dokumen dan
-birokrasi di Indonesia.
+description: caramengurus.com adalah portal informasi cara mengurus segala dokumen dan birokrasi di Indonesia.
 ---
 
 caramengurus.com adalah portal informasi cara mengurus segala dokumen dan birokrasi
